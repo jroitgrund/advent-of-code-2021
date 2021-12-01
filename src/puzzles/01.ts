@@ -1,19 +1,14 @@
-import { reduce } from "lodash";
-
 export function part1(input: string): number {
-  const depths = input.split("\n").map((n) => Number(n));
-  const initialValues: { total: number; prev: number | undefined } = {
-    total: 0,
-    prev: undefined,
-  };
-  return reduce(
-    depths,
-    ({ total, prev }, nextValue) => ({
-      total: prev != null && nextValue > prev ? total + 1 : total,
-      prev: nextValue,
-    }),
-    initialValues
-  ).total;
+  const depths = input.split("\n").map(Number);
+  let prev = undefined;
+  let total = 0;
+  for (const depth of depths) {
+    if (prev && depth > prev) {
+      total += 1;
+      prev = depth;
+    }
+  }
+  return total;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
