@@ -1,9 +1,9 @@
 export function part1(input: string): number {
   const depths = input.split("\n").map(Number);
-  let prev = undefined;
+  let prev: null | number = null;
   let total = 0;
   for (const depth of depths) {
-    if (prev && depth > prev) {
+    if (prev != null && depth > prev) {
       total += 1;
       prev = depth;
     }
