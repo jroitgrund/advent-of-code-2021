@@ -5,8 +5,8 @@ export function part1(input: string): number {
   for (const depth of depths) {
     if (prev != null && depth > prev) {
       total += 1;
-      prev = depth;
     }
+    prev = depth;
   }
   return total;
 }
