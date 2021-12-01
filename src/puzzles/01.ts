@@ -1,4 +1,4 @@
-export const puzzle1part1 = (input: string) =>
+export const part1 = (input: string) =>
   input
     .split("\n")
     .map(Number)
@@ -9,7 +9,7 @@ export const puzzle1part1 = (input: string) =>
       0
     );
 
-export const puzzle1part2 = (input: string) =>
+export const part2 = (input: string) =>
   input
     .split("\n")
     .map(Number)

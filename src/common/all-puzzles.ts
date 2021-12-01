@@ -1,8 +1,8 @@
-import { part1, part2 } from "../puzzles/00";
-import { puzzle1part1, puzzle1part2 } from "../puzzles/01";
+import * as puzzle00 from "../puzzles/00";
+import * as puzzle01 from "../puzzles/01";
 import { PuzzleSolver } from "./solver";
 
 export const allPuzzles: { [key: string]: PuzzleSolver } = {
-  "00": [part1, part2],
-  "01": [puzzle1part1, puzzle1part2],
+  "00": [puzzle00.part1, puzzle00.part2],
+  "01": [puzzle01.part1, puzzle01.part2],
 };
