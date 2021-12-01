@@ -4,6 +4,5 @@ import { PuzzleSolver } from "./solver";
 
 export const allPuzzles: { [key: string]: PuzzleSolver } = {
   "00": [part1, part2],
-  // @ts-ignore
-  "01": [puzzle1part1],
+  "01": [puzzle1part1, undefined],
 };

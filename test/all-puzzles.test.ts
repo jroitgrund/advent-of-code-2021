@@ -21,7 +21,8 @@ each(allPuzzles, (solver, puzzleNumber) => {
     const answers = getTestAnswers(puzzleNumber);
     test("Part 1", async () =>
       expect(solver[0](await testInput)).toBe((await answers)[0]));
+
     test("Part 2", async () =>
-      expect(solver[1](await testInput)).toBe((await answers)[1]));
+      solver[1] && expect(solver[1](await testInput)).toBe((await answers)[1]));
   });
 });
