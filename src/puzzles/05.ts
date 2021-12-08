@@ -1,4 +1,4 @@
-import { filter, isNull, some } from "lodash";
+import { isNull, some } from "lodash";
 
 function addCoord(
   linesAtCoord: { [key: string]: number },
