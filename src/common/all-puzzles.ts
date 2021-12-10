@@ -8,6 +8,7 @@ import * as puzzle06 from "../puzzles/06";
 import * as puzzle07 from "../puzzles/07";
 import * as puzzle08 from "../puzzles/08";
 import * as puzzle09 from "../puzzles/09";
+import * as puzzle10 from "../puzzles/10";
 import { PuzzleSolver } from "./solver";
 
 export const allPuzzles: { [key: string]: PuzzleSolver } = {
@@ -21,4 +22,5 @@ export const allPuzzles: { [key: string]: PuzzleSolver } = {
   "07": [puzzle07.part1, puzzle07.part2],
   "08": [puzzle08.part1, puzzle08.part2],
   "09": [puzzle09.part1, puzzle09.part2],
+  "10": [puzzle10.part1, puzzle10.part2],
 };
