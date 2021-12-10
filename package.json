@@ -27,7 +27,7 @@
     "check-prettier": "prettier -c **/*.ts",
     "check-lint": "eslint .",
     "fix-prettier": "prettier -w **/*.ts",
-    "solutions": "yarn node dist/src/common/main.js",
+    "solutions": "yarn node dist/common/main.js",
     "test": "jest"
   }
 }
