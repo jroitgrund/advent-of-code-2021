@@ -14,6 +14,7 @@ import * as puzzle12 from "../puzzles/12";
 import * as puzzle13 from "../puzzles/13";
 import * as puzzle14 from "../puzzles/14";
 import * as puzzle15 from "../puzzles/15";
+import * as puzzle16 from "../puzzles/16";
 import { PuzzleSolver } from "./solver";
 
 export const allPuzzles: { [key: string]: PuzzleSolver } = {
@@ -33,4 +34,5 @@ export const allPuzzles: { [key: string]: PuzzleSolver } = {
   "13": [puzzle13.part1, puzzle13.part2],
   "14": [puzzle14.part1, puzzle14.part2],
   "15": [puzzle15.part1, puzzle15.part2],
+  "16": [puzzle16.part1, puzzle16.part2],
 };
