@@ -16,12 +16,12 @@ async function getTestAnswers(puzzleNumber: string) {
 }
 
 each(allPuzzles, (solver, puzzleNumber) => {
-  describe(`Puzzle ${puzzleNumber} (part 1)`, () => {
+  describe(`Puzzle ${puzzleNumber}`, () => {
     const testInput = getTestInput(puzzleNumber);
     const answers = getTestAnswers(puzzleNumber);
-    test("Part 1", async () =>
+    test(`Puzzle ${puzzleNumber} (1)`, async () =>
       expect(solver[0](await testInput)).toBe((await answers)[0]));
-    test("Part 2", async () =>
+    test(`Puzzle ${puzzleNumber} (2)`, async () =>
       expect(solver[1](await testInput)).toBe((await answers)[1]));
   });
 });
