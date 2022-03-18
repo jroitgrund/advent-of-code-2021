@@ -18,7 +18,7 @@ export const getPuzzleSolutions = async (
     await readFile(`puzzles/${puzzleNumber}/input-${user}.txt`)
   ).toString();
 
-  return [solver[0](puzzleInput), solver[1](puzzleInput)];
+  return [solver[0](puzzleInput), solver[1] && solver[1](puzzleInput)];
 };
 
 export const printPuzzleSolutions = async (
